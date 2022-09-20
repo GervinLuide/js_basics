@@ -19,7 +19,22 @@ const person ={
 }
 
 console.log(person)
-console.log(person.firstname)
-console.log(person.surname)
-person.department = "ikt"
-console.log(person)
+console.log(typeof person)
+
+// null
+
+const airplane = null
+console.log(airplane)
+console.log(typeof airplane)
+
+//
+const sym = Symbol()
+console.log(sym)
+console.log(typeof sym)
+
+//undefined
+let test
+console.log(test)
+console.log(typeof test)
+
+
