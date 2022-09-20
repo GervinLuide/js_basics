@@ -1,40 +1,45 @@
+let val
 
-// let
-let name="Gervin Luide"
+// number laheb string
+val = String(555)
+val = String(4+4)
+val = String(5.8)
 
-// const
-const surname ="Luide"
+//boolean = string
+val = String(true)
+val = String(false)
 
-// arrays
-const numbers = [1, 2, 3, 4, 5]
-console.log(numbers)
-numbers.push(6)
-console.log(numbers)
+//Object = string
+val = String(new Date())
 
-//objects
+// null = string
+val = String(null)
 
-const person ={
-    firstname: "Gervin",
-    surname: "Luide"
-}
+// array = string
+val = String([1, 2, 3, 4, 5])
 
-console.log(person)
-console.log(typeof person)
+// undefined = String
+val= String(undefined)
 
-// null
+// toString()
 
-const airplane = null
-console.log(airplane)
-console.log(typeof airplane)
+val = (true).toString()
 
-//
-const sym = Symbol()
-console.log(sym)
-console.log(typeof sym)
-
-//undefined
-let test
-console.log(test)
-console.log(typeof test)
-
-
+//String = number
+val = Number(5)
+//Boolean = Number
+val = Number(true)
+val = Number(false)
+// Null = number
+val = Number(null)
+// string = Number
+val = Number("test")
+// Array = Number
+val = Number([1, 2, 3])
+//toString()
+val=(true).toString()
+// String = integer
+val = parseInt("100.3")
+//String = Float
+val = parseFloat("100.30")
+console.log(val)
