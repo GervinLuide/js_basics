@@ -1,15 +1,19 @@
-const num1 = 100
-const num2 = 50
-let tesult
-result = num1 + num2
-result = Math.Pi
-result = Math.round(2.5)
-result = Math.ceil(2.3)
-result = Math.floor(2.8)
-result = Math.sqrt(64)
-result = Math.abs(-3)
-result = Math.pow(8,2)
+const firstname = "gervin"
+const surname = "luide"
+const email = "gervin.luide@voco.ee"
+const department = "IKT"
 
+let result = "<ul>" +
+    "<li> <b>Name</b>" + firstname + "</b>" +
+    "<li>" + surname + "</li>" +
+    "<li>" + email + "</li>" +
+    "<li>" + department + "</li>" +
+    "</ul>"
 
-result = Math.round(Math.random() * 11)
+result = `<ul>
+<li> <b>name:</b>${firstname} </li>
+<li> <b>surname:</b>${surname} </li>
+<li> <b>email:</b>${email} </li>
+<li> <b>department:</b>${department} </li>
+</ul>`
 console.log(result)
