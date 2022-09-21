@@ -1,45 +1,15 @@
-let val
+const num1 = 100
+const num2 = 50
+let tesult
+result = num1 + num2
+result = Math.Pi
+result = Math.round(2.5)
+result = Math.ceil(2.3)
+result = Math.floor(2.8)
+result = Math.sqrt(64)
+result = Math.abs(-3)
+result = Math.pow(8,2)
 
-// number laheb string
-val = String(555)
-val = String(4+4)
-val = String(5.8)
 
-//boolean = string
-val = String(true)
-val = String(false)
-
-//Object = string
-val = String(new Date())
-
-// null = string
-val = String(null)
-
-// array = string
-val = String([1, 2, 3, 4, 5])
-
-// undefined = String
-val= String(undefined)
-
-// toString()
-
-val = (true).toString()
-
-//String = number
-val = Number(5)
-//Boolean = Number
-val = Number(true)
-val = Number(false)
-// Null = number
-val = Number(null)
-// string = Number
-val = Number("test")
-// Array = Number
-val = Number([1, 2, 3])
-//toString()
-val=(true).toString()
-// String = integer
-val = parseInt("100.3")
-//String = Float
-val = parseFloat("100.30")
-console.log(val)
+result = Math.round(Math.random() * 11)
+console.log(result)
