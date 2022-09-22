@@ -1,23 +1,46 @@
-const numbers1 = [43, 56, 33, 23, 44, 36, 5]
-const numbers2 = new Array(22, 45, 33, 76, 54)
+const person ={
+    firstname: "Kadi",
+    surname: "Tamm",
+    age: 40,
+    email: "Kadi.tamm@gmail.com",
+    hobbies: ["tennis", "korvpall"],
+    address: {
+        city: "voru",
+        country: "vorumaa"
+    },
+    getBirthYear: function (){
+        return 2022 - this.age
+    }
+}
 
 let val
+val = person
+//kaks valikut:
+val = person.firstname
+val = person["surname"]
+val = person["hobbies"][1]
+val = person.hobbies[0]
+val = person.address.city
+val = person.address["city"]
+val = person.getBirthYear()
+console.log(val)
 
-val = numbers1.length
-vall = numbers2.length
 
-val = numbers1[3]
-val = numbers1.indexOf(36)
-val = Array.isArray(numbers2)
-numbers1.push(250)
-numbers1.pop()
-numbers1.unshift(120)
-numbers1.shift()
-val = numbers1.concat(numbers2)
-numbers1.sort(function (x, y) {
-    return y - x
-})
-numbers1.sort(function (x, y) {
-    return x - y
-})
-console.log(numbers1)
+/*
+for(let i = 0; i < person.hobbies.length; i++){
+    console.log(person.hobbies[i])
+}
+
+/*person.hobbies.forEach(function (hobbie, index, hobbies)){
+    console.log(hobbie + "on element indeksiga " + index)
+    console.log(hobbies)
+}
+
+ */
+
+person.hobbies.forEach((hobbie, index) => {
+    console.log(hobbie + "on element indeksiga " + index)
+}
+
+
+
