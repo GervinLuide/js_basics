@@ -1,33 +1,29 @@
-let val;
-val = document
-val= document.all
-val= document.all[6]
-val = document.all.length
+const form = document.querySelector("form")
+const taskInmput = document.querySelector("#task")
+const tasksHeading = document.querySelector("#task-title")
+//submit
+form.addEventListener('submit', runEvent)
 
-val = document.head
-val = document.body
+//keyboard
+//taskInmput.addEventListener("keydown", runEvent)
+//taskInmput.addEventListener("keyup", runEvent)
+//taskInmput.addEventListener("keypress", runEvent)
 
-val = document.doctype
-val = document.domain
-val= document.URL
-val = document.characterSet
-val = document.contentType
-
-val = document.forms[0]
-val = document.forms[0].method
-val = document.forms[0].action
-val = document.forms[0].id
-val = document.links
-val = document.links[1]
-val = document.forms[1].id
-val = document.forms[1].className
-val = document.forms[1].classList
-val = document.forms[1].classList[2]
-
-val = document.scripts
-val = document.scripts[0]
-val = document.scripts[1]
-val = document.scripts[1].getAttribute("src")
+// focus
+//taskInmput.addEventListener("focus", runEvent)
+//taskInmput.addEventListener("blur", runEvent)
 
 
-console.log(val)
+//taskInmput.addEventListener("cut", runEvent)
+//taskInmput.addEventListener("paste", runEvent)
+taskInmput.addEventListener("input", runEvent)
+
+
+
+
+function runEvent(event){
+    console.log(`Event type ${event.type}`)
+    tasksHeading.innerText = event.target.value
+    event.preventDefault()
+    //event.preventDefault()
+}
