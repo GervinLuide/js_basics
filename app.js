@@ -1,26 +1,37 @@
-const firstname = 'gervin'
-const surname = 'Luide'
+val = document.getElementById('task-form')
+val = document.getElementById('task-form').id
+val = document.getElementById('task-form').className
 
-let val = firstname + ' ' + surname
+const taskTitle = document.getElementById('task-title')
 
-val = 'Gervin '
-val += surname
+// style
+taskTitle.style.background = '#333'
+taskTitle.style.color = '#fff'
+taskTitle.style.padding = '15px'
+// taskTitle.style.display = 'none'
 
-val = firstname.toUpperCase()
-val = surname.toLowerCase()
+// content
+taskTitle.textContent = 'Defined Tasks'
+taskTitle.innerText = 'My Favorite Tasks'
+taskTitle.innerHTML = '<b style="color: red">My Tasks</b>'
 
-val = surname[0]
-val = surname.indexOf('e')
-val = surname.lastIndexOf('e')
 
-val = surname.charAt(2)
-val = surname.charAt(surname.length - 1)
+val = document.querySelector('#task-title')
+val = document.querySelector('.card-title')
+val = document.querySelector('ul')
 
-val = surname.substring(0, 4)
-val = surname.slice(0, 4)
-val = surname.slice(-3)
+// const task = document.querySelector('li')
+// task.style.color = 'green'
 
-const tags = 'JS, HTML, CSS'
-val = tags.split(',')
+val = document.querySelector('li:last-child')
+// document.querySelector('li:nth-child(odd)').style.background = '#ccc'
+// document.querySelector('li:nth-child(even)').style.background = '#f4f4f4'
 
-console.log(val[1].trim())
+// multiply elements
+
+val = document.querySelectorAll('li')
+oddLi = document.querySelectorAll('li:nth-child(odd)')
+
+oddLi.forEach((li) => {
+    li.style.background = '#ddd'
+})
