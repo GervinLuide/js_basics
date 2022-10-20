@@ -1,29 +1,26 @@
-const form = document.querySelector("form")
-const taskInmput = document.querySelector("#task")
-const tasksHeading = document.querySelector("#task-title")
-//submit
-form.addEventListener('submit', runEvent)
+const firstname = 'gervin'
+const surname = 'Luide'
 
-//keyboard
-//taskInmput.addEventListener("keydown", runEvent)
-//taskInmput.addEventListener("keyup", runEvent)
-//taskInmput.addEventListener("keypress", runEvent)
+let val = firstname + ' ' + surname
 
-// focus
-//taskInmput.addEventListener("focus", runEvent)
-//taskInmput.addEventListener("blur", runEvent)
+val = 'Gervin '
+val += surname
 
+val = firstname.toUpperCase()
+val = surname.toLowerCase()
 
-//taskInmput.addEventListener("cut", runEvent)
-//taskInmput.addEventListener("paste", runEvent)
-taskInmput.addEventListener("input", runEvent)
+val = surname[0]
+val = surname.indexOf('e')
+val = surname.lastIndexOf('e')
 
+val = surname.charAt(2)
+val = surname.charAt(surname.length - 1)
 
+val = surname.substring(0, 4)
+val = surname.slice(0, 4)
+val = surname.slice(-3)
 
+const tags = 'JS, HTML, CSS'
+val = tags.split(',')
 
-function runEvent(event){
-    console.log(`Event type ${event.type}`)
-    tasksHeading.innerText = event.target.value
-    event.preventDefault()
-    //event.preventDefault()
-}
+console.log(val[1].trim())
